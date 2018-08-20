@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A16365C212766470076AEE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16365B212766470076AEE4 /* AppDelegate.swift */; };
+		5A163663212766480076AEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A163662212766480076AEE4 /* Assets.xcassets */; };
+		5A163666212766480076AEE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A163664212766480076AEE4 /* LaunchScreen.storyboard */; };
+		5A163673212768780076AEE4 /* AYMNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A163672212768780076AEE4 /* AYMNavigationManager.swift */; };
+		5A16368021285CB00076AEE4 /* AYMAppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16367F21285CB00076AEE4 /* AYMAppAssembly.swift */; };
+		5A16368721285F8B0076AEE4 /* AYMRestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16368321285F8B0076AEE4 /* AYMRestaurantTableViewCell.swift */; };
+		5A16368821285F8B0076AEE4 /* AYMRestaurantsTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16368521285F8B0076AEE4 /* AYMRestaurantsTableDelegate.swift */; };
+		5A16368921285F8B0076AEE4 /* AYMRestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16368621285F8B0076AEE4 /* AYMRestaurantsViewController.swift */; };
+		5A16368C21285FCA0076AEE4 /* AYMRestaurantsDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16368B21285FCA0076AEE4 /* AYMRestaurantsDataFetcher.swift */; };
+		5A16368F212862120076AEE4 /* AYMRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16368E212862120076AEE4 /* AYMRestaurant.swift */; };
+		5A16369521286C340076AEE4 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A163692212865D50076AEE4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A1636982128B3D30076AEE4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1636972128B3D30076AEE4 /* Constants.swift */; };
+		5A16369A21299DE30076AEE4 /* AYMLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16369921299DE30076AEE4 /* AYMLocationManager.swift */; };
+		5A1636A0212A14D40076AEE4 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16369B212A0DDF0076AEE4 /* SDWebImage.framework */; };
+		5A1636A2212A14F10076AEE4 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16369B212A0DDF0076AEE4 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A1636A5212A1D8A0076AEE4 /* AYMWeatherForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1636A4212A1D8A0076AEE4 /* AYMWeatherForecastViewController.swift */; };
+		5A1636A9212B50430076AEE4 /* AYMDailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1636A8212B50430076AEE4 /* AYMDailyWeather.swift */; };
+		5A1636AB212B582A0076AEE4 /* AYMDailyWeatherDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1636AA212B582A0076AEE4 /* AYMDailyWeatherDataFetcher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A16369621286C350076AEE4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A1636A2212A14F10076AEE4 /* SDWebImage.framework in Embed Frameworks */,
+				5A16369521286C340076AEE4 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A163658212766470076AEE4 /* AYMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AYMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A16365B212766470076AEE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A163662212766480076AEE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A163665212766480076AEE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A163667212766480076AEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A163672212768780076AEE4 /* AYMNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMNavigationManager.swift; sourceTree = "<group>"; };
+		5A16367F21285CB00076AEE4 /* AYMAppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMAppAssembly.swift; sourceTree = "<group>"; };
+		5A16368321285F8B0076AEE4 /* AYMRestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMRestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		5A16368521285F8B0076AEE4 /* AYMRestaurantsTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMRestaurantsTableDelegate.swift; sourceTree = "<group>"; };
+		5A16368621285F8B0076AEE4 /* AYMRestaurantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYMRestaurantsViewController.swift; sourceTree = "<group>"; };
+		5A16368B21285FCA0076AEE4 /* AYMRestaurantsDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMRestaurantsDataFetcher.swift; sourceTree = "<group>"; };
+		5A16368E212862120076AEE4 /* AYMRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMRestaurant.swift; sourceTree = "<group>"; };
+		5A163692212865D50076AEE4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		5A1636972128B3D30076AEE4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5A16369921299DE30076AEE4 /* AYMLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMLocationManager.swift; sourceTree = "<group>"; };
+		5A16369B212A0DDF0076AEE4 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = SOURCE_ROOT; };
+		5A1636A4212A1D8A0076AEE4 /* AYMWeatherForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMWeatherForecastViewController.swift; sourceTree = "<group>"; };
+		5A1636A8212B50430076AEE4 /* AYMDailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMDailyWeather.swift; sourceTree = "<group>"; };
+		5A1636AA212B582A0076AEE4 /* AYMDailyWeatherDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMDailyWeatherDataFetcher.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A163655212766470076AEE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A1636A0212A14D40076AEE4 /* SDWebImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A16364F212766470076AEE4 = {
+			isa = PBXGroup;
+			children = (
+				5A16365A212766470076AEE4 /* AYMTest */,
+				5A163659212766470076AEE4 /* Products */,
+				5A16369F212A14D40076AEE4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A163659212766470076AEE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A163658212766470076AEE4 /* AYMTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A16365A212766470076AEE4 /* AYMTest */ = {
+			isa = PBXGroup;
+			children = (
+				5A16365B212766470076AEE4 /* AppDelegate.swift */,
+				5A1636972128B3D30076AEE4 /* Constants.swift */,
+				5A16367E21285C970076AEE4 /* Assemblies */,
+				5A16366F212767A50076AEE4 /* 3rdParty */,
+				5A163670212767A50076AEE4 /* Modules */,
+				5A163662212766480076AEE4 /* Assets.xcassets */,
+				5A163664212766480076AEE4 /* LaunchScreen.storyboard */,
+				5A163667212766480076AEE4 /* Info.plist */,
+			);
+			path = AYMTest;
+			sourceTree = "<group>";
+		};
+		5A16366F212767A50076AEE4 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				5A16369B212A0DDF0076AEE4 /* SDWebImage.framework */,
+				5A163692212865D50076AEE4 /* Alamofire.framework */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		5A163670212767A50076AEE4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5A16367421276ADC0076AEE4 /* Restaurants */,
+				5A16367521276ADC0076AEE4 /* Weather */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5A16367421276ADC0076AEE4 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				5A16368D212862020076AEE4 /* Data */,
+				5A16368A21285FBD0076AEE4 /* DataFetcher */,
+				5A16368121285F8B0076AEE4 /* UI */,
+			);
+			path = Restaurants;
+			sourceTree = "<group>";
+		};
+		5A16367521276ADC0076AEE4 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				5A1636A7212B501D0076AEE4 /* Data */,
+				5A1636A6212B501D0076AEE4 /* DataFetcher */,
+				5A1636A3212A1D2E0076AEE4 /* UI */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		5A16367E21285C970076AEE4 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				5A163672212768780076AEE4 /* AYMNavigationManager.swift */,
+				5A16367F21285CB00076AEE4 /* AYMAppAssembly.swift */,
+				5A16369921299DE30076AEE4 /* AYMLocationManager.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		5A16368121285F8B0076AEE4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5A16368221285F8B0076AEE4 /* Components */,
+				5A16368421285F8B0076AEE4 /* Delegates */,
+				5A16368621285F8B0076AEE4 /* AYMRestaurantsViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5A16368221285F8B0076AEE4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5A16368321285F8B0076AEE4 /* AYMRestaurantTableViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5A16368421285F8B0076AEE4 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5A16368521285F8B0076AEE4 /* AYMRestaurantsTableDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		5A16368A21285FBD0076AEE4 /* DataFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				5A16368B21285FCA0076AEE4 /* AYMRestaurantsDataFetcher.swift */,
+			);
+			path = DataFetcher;
+			sourceTree = "<group>";
+		};
+		5A16368D212862020076AEE4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5A16368E212862120076AEE4 /* AYMRestaurant.swift */,
+			);
+			name = Data;
+			path = AYMTest/Modules/Data;
+			sourceTree = SOURCE_ROOT;
+		};
+		5A16369F212A14D40076AEE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A1636A3212A1D2E0076AEE4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5A1636A4212A1D8A0076AEE4 /* AYMWeatherForecastViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5A1636A6212B501D0076AEE4 /* DataFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				5A1636AA212B582A0076AEE4 /* AYMDailyWeatherDataFetcher.swift */,
+			);
+			path = DataFetcher;
+			sourceTree = "<group>";
+		};
+		5A1636A7212B501D0076AEE4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5A1636A8212B50430076AEE4 /* AYMDailyWeather.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A163657212766470076AEE4 /* AYMTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A16366A212766480076AEE4 /* Build configuration list for PBXNativeTarget "AYMTest" */;
+			buildPhases = (
+				5A163654212766470076AEE4 /* Sources */,
+				5A163655212766470076AEE4 /* Frameworks */,
+				5A163656212766470076AEE4 /* Resources */,
+				5A16369621286C350076AEE4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AYMTest;
+			productName = AYMTest;
+			productReference = 5A163658212766470076AEE4 /* AYMTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A163650212766470076AEE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Norbert Nemes";
+				TargetAttributes = {
+					5A163657212766470076AEE4 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5A163653212766470076AEE4 /* Build configuration list for PBXProject "AYMTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A16364F212766470076AEE4;
+			productRefGroup = 5A163659212766470076AEE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A163657212766470076AEE4 /* AYMTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A163656212766470076AEE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A163666212766480076AEE4 /* LaunchScreen.storyboard in Resources */,
+				5A163663212766480076AEE4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A163654212766470076AEE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A16368721285F8B0076AEE4 /* AYMRestaurantTableViewCell.swift in Sources */,
+				5A1636AB212B582A0076AEE4 /* AYMDailyWeatherDataFetcher.swift in Sources */,
+				5A16365C212766470076AEE4 /* AppDelegate.swift in Sources */,
+				5A16368821285F8B0076AEE4 /* AYMRestaurantsTableDelegate.swift in Sources */,
+				5A16368C21285FCA0076AEE4 /* AYMRestaurantsDataFetcher.swift in Sources */,
+				5A163673212768780076AEE4 /* AYMNavigationManager.swift in Sources */,
+				5A1636A5212A1D8A0076AEE4 /* AYMWeatherForecastViewController.swift in Sources */,
+				5A16368021285CB00076AEE4 /* AYMAppAssembly.swift in Sources */,
+				5A16369A21299DE30076AEE4 /* AYMLocationManager.swift in Sources */,
+				5A16368F212862120076AEE4 /* AYMRestaurant.swift in Sources */,
+				5A16368921285F8B0076AEE4 /* AYMRestaurantsViewController.swift in Sources */,
+				5A1636A9212B50430076AEE4 /* AYMDailyWeather.swift in Sources */,
+				5A1636982128B3D30076AEE4 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A163664212766480076AEE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A163665212766480076AEE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A163668212766480076AEE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A163669212766480076AEE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A16366B212766480076AEE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AYMTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aym.test.AYMTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A16366C212766480076AEE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AYMTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aym.test.AYMTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A163653212766470076AEE4 /* Build configuration list for PBXProject "AYMTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A163668212766480076AEE4 /* Debug */,
+				5A163669212766480076AEE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A16366A212766480076AEE4 /* Build configuration list for PBXNativeTarget "AYMTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A16366B212766480076AEE4 /* Debug */,
+				5A16366C212766480076AEE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A163650212766470076AEE4 /* Project object */;
+}
