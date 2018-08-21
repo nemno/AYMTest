@@ -10,10 +10,13 @@ import UIKit
 
 class AYMDailyWeather: NSObject {
     let weatherDescription: String
-    let temperature: Double
+    let minTemperature: Double
+    let maxTemperature: Double
     let wind: Double
     let humidity: Double
     let date: Date
+    var city: String?
+    let iconImageURL: URL?
 
     init(dataDictionary: [String: Any]) {
         if let weatherArray = dataDictionary["weather"] as? [[String: Any]], let mainDict = dataDictionary["main"] as? [String: Any], let windDict = dataDictionary["wind"] as? [String: Any] {
@@ -23,10 +26,22 @@ class AYMDailyWeather: NSObject {
                 self.weatherDescription = ""
             }
             
-            if let temperature = mainDict["temp"] as? Double {
-                self.temperature = temperature
+            if let iconURLString = weatherArray[0]["icon"] as? String {
+                self.iconImageURL = URL(string: "https://openweathermap.org/img/w/" + iconURLString + ".png")
             } else {
-                self.temperature = 0.0
+                self.iconImageURL = nil
+            }
+            
+            if let minTemperature = mainDict["temp_min"] as? Double {
+                self.minTemperature = minTemperature
+            } else {
+                self.minTemperature = 0.0
+            }
+            
+            if let maxTemperature = mainDict["temp_max"] as? Double {
+                self.maxTemperature = maxTemperature
+            } else {
+                self.maxTemperature = 0.0
             }
             
             if let wind = windDict["speed"] as? Double {
@@ -41,7 +56,7 @@ class AYMDailyWeather: NSObject {
                 self.humidity = 0.0
             }
             
-            if let dateString = dataDictionary["dt_text"] as? String {
+            if let dateString = dataDictionary["dt_txt"] as? String {
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                 if let date = dateFormatter.date(from: dateString) {
@@ -55,10 +70,13 @@ class AYMDailyWeather: NSObject {
         } else {
             assertionFailure("Unexpected data from API")
             self.weatherDescription = ""
-            self.temperature = 0.0
+            self.minTemperature = 0.0
+            self.maxTemperature = 0.0
             self.wind = 0.0
             self.humidity = 0.0
             self.date = Date(timeIntervalSince1970: 0)
+            self.city = ""
+            self.iconImageURL = nil
         }
         
         super.init()

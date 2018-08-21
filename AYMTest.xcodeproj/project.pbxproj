@@ -25,6 +25,7 @@
 		5A1636A5212A1D8A0076AEE4 /* AYMWeatherForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1636A4212A1D8A0076AEE4 /* AYMWeatherForecastViewController.swift */; };
 		5A1636A9212B50430076AEE4 /* AYMDailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1636A8212B50430076AEE4 /* AYMDailyWeather.swift */; };
 		5A1636AB212B582A0076AEE4 /* AYMDailyWeatherDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1636AA212B582A0076AEE4 /* AYMDailyWeatherDataFetcher.swift */; };
+		5A1636AE212CA4DE0076AEE4 /* AYMSmallWeatherForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1636AD212CA4DE0076AEE4 /* AYMSmallWeatherForecastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,7 @@
 		5A1636A4212A1D8A0076AEE4 /* AYMWeatherForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMWeatherForecastViewController.swift; sourceTree = "<group>"; };
 		5A1636A8212B50430076AEE4 /* AYMDailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMDailyWeather.swift; sourceTree = "<group>"; };
 		5A1636AA212B582A0076AEE4 /* AYMDailyWeatherDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMDailyWeatherDataFetcher.swift; sourceTree = "<group>"; };
+		5A1636AD212CA4DE0076AEE4 /* AYMSmallWeatherForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AYMSmallWeatherForecastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 		5A1636A3212A1D2E0076AEE4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				5A1636AC212CA3970076AEE4 /* Components */,
 				5A1636A4212A1D8A0076AEE4 /* AYMWeatherForecastViewController.swift */,
 			);
 			path = UI;
@@ -228,6 +231,14 @@
 				5A1636A8212B50430076AEE4 /* AYMDailyWeather.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		5A1636AC212CA3970076AEE4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5A1636AD212CA4DE0076AEE4 /* AYMSmallWeatherForecastView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +316,7 @@
 				5A1636AB212B582A0076AEE4 /* AYMDailyWeatherDataFetcher.swift in Sources */,
 				5A16365C212766470076AEE4 /* AppDelegate.swift in Sources */,
 				5A16368821285F8B0076AEE4 /* AYMRestaurantsTableDelegate.swift in Sources */,
+				5A1636AE212CA4DE0076AEE4 /* AYMSmallWeatherForecastView.swift in Sources */,
 				5A16368C21285FCA0076AEE4 /* AYMRestaurantsDataFetcher.swift in Sources */,
 				5A163673212768780076AEE4 /* AYMNavigationManager.swift in Sources */,
 				5A1636A5212A1D8A0076AEE4 /* AYMWeatherForecastViewController.swift in Sources */,

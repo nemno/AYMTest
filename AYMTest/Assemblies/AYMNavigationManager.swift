@@ -39,7 +39,7 @@ class AYMNavigationManager: NSObject {
     
     func showLoadingOn(viewController: UIViewController) {
         loadingView = UIView(frame: viewController.view.frame)
-        loadingView?.backgroundColor = .red
+        loadingView?.backgroundColor = UIColor(white: 0.0, alpha: 0.3)
         viewController.view.addSubview(loadingView!)
     }
     

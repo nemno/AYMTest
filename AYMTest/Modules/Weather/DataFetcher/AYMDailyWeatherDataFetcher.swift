@@ -23,7 +23,7 @@ class AYMDailyWeatherDataFetcher: NSObject {
         
         locationManager.getCurrentLocation { (location, locationError) in
             if let currentLocation = location {
-                let params: [String : Any] = ["lat": currentLocation.coordinate.latitude, "lon": currentLocation.coordinate.longitude, "appid": openWeatherMapAPIKey]
+                let params: [String : Any] = ["lat": currentLocation.coordinate.latitude, "lon": currentLocation.coordinate.longitude, "appid": openWeatherMapAPIKey, "units": "metric"]
                 
                 let request = Alamofire.request(openWeatherMapAPIURL, method: .get, parameters: params)
                 request.responseJSON { [weak self] (response) in
@@ -45,15 +45,27 @@ class AYMDailyWeatherDataFetcher: NSObject {
         
         if let response = response as? [String: Any], let results = response["list"] as? [[String: Any]] {
             responseArray = results
+            
+            for dictionary in responseArray {
+                let dailyWeather = AYMDailyWeather(dataDictionary: dictionary)
+                
+                if let cityDict = response["city"] as? [String: Any] {
+                    if let cityName = cityDict["name"] as? String {
+                        dailyWeather.city = cityName
+                    }
+                }
+                
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "HH"
+                if (dateFormatter.string(from: dailyWeather.date) == "12") {
+                    dataObjectArray.append(dailyWeather)
+                }
+            }
+            
+            return dataObjectArray
         } else {
             assertionFailure("Unexpected response!")
             return nil
         }
-        
-        for dictionary in responseArray {
-            dataObjectArray.append(AYMDailyWeather(dataDictionary: dictionary))
-        }
-        
-        return dataObjectArray
     }
 }

@@ -24,6 +24,6 @@ class AYMAppAssembly: NSObject {
         let restaurantsViewController = AYMRestaurantsViewController(locationManager: locationManager)
         tabBarController.viewControllers = [weatherViewController, restaurantsViewController]
         
-        return AYMNavigationManager(rootViewController: tabBarController, viewControllers: [restaurantsViewController])
+        return AYMNavigationManager(rootViewController: tabBarController, viewControllers: [weatherViewController, restaurantsViewController])
     }
 }
